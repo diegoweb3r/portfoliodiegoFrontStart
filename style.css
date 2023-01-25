@@ -64,6 +64,11 @@ header .container{
     height: fit-content;
 }
 
+header .logo-container{
+    display: none ;
+}
+
+
 header .container h1{
     color: var(--lgreen);
 }
@@ -87,14 +92,103 @@ nav img{
     height: 45px;
 }
 
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav ul a{
     font-size: 24px;
     color: var(--lgreen);
     text-decoration: none;
-    margin: 0 50px;
+}
+
+nav ul a svg{
+    display: none;
 }
 
 section{
     height: 1500px;
     background-color: palegoldenrod;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 145px;
+    height: 45px;
+    border-left: 5px solid var(--lgreen);
+    padding-left: 10px;
+}
+
+nav .logo-container h3{
+    margin: 0;
+}
+
+/* RESPONSIVIDADE */
+/* Small desktop */
+@media (max-width: 1000px){
+    nav ul a{
+        font-size: 18px;
+    }
+
+    header .container{
+        width: 100%;
+        padding: 0 100px;
+    }
+    nav {
+        padding: 0 30px;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 767px){
+ 
+    
+    header .logo-container{
+        display: flex;
+        width: 100px;
+        margin-bottom: 70px;
+    }
+
+    header .logo-container h3{
+        margin: 0;
+    }
+
+    nav  .logo-container{
+        display: none;
+    }
+
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul a{
+        font-size: 16px;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px){
+
+    header .container{
+        padding: 0 45px;
+    }
+
+    nav{
+        padding: 0 15px;
+    }
+    nav ul a{
+        font-size: 12px;
+    }
+
+    nav ul a svg{
+        display: block;
+        margin: 0 auto 10px;
+    }
+   
+    
 }
