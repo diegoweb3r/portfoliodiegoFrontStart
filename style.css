@@ -142,12 +142,30 @@ nav .logo-container h3{
 .about-me .img-container{
     width: 50%;
     text-align: center;
+    position: relative;
 }
 
 .about-me .img-container img{
     width: 70%;
-    
+    height: 100%;
 }
+
+.about-me .img-container .line{
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--lgreen);
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px)
+}
+
+.about-me .img-container .line.mgreen{
+        transform: rotate(-3.3deg);
+        border: 1px solid var(--green);
+}
+
+
+
 
 
 /* RESPONSIVIDADE */
