@@ -52,6 +52,14 @@ button{
     font-size: 18px;
 }
 
+.title-lgreen{
+    color: var(--lgreen);
+}
+
+.title-mgreen{
+    color: var(--mgreen);
+}
+
 header {
     height: calc(100vh - var(--nav-height));
     display: flex;
@@ -66,11 +74,6 @@ header .container{
 
 header .logo-container{
     display: none ;
-}
-
-
-header .container h1{
-    color: var(--lgreen);
 }
 
 header .container button{
@@ -108,11 +111,6 @@ nav ul a svg{
     display: none;
 }
 
-section{
-    height: 1500px;
-    background-color: palegoldenrod;
-}
-
 .logo-container{
     display: flex;
     flex-direction: column;
@@ -126,6 +124,31 @@ section{
 nav .logo-container h3{
     margin: 0;
 }
+
+.about-me{
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container{
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container p{
+    text-align: justify;
+}
+
+.about-me .img-container{
+    width: 50%;
+    text-align: center;
+}
+
+.about-me .img-container img{
+    width: 70%;
+    
+}
+
 
 /* RESPONSIVIDADE */
 /* Small desktop */
