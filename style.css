@@ -72,6 +72,10 @@ header .container{
     height: fit-content;
 }
 
+header .container p{
+    text-align: justify;
+}
+
 header .logo-container{
     display: none ;
 }
@@ -89,6 +93,7 @@ nav{
     position: sticky;
     top: 0;
     background-color: var(--vdgreen);
+    z-index: 99;
 }
 
 nav img{
@@ -148,6 +153,7 @@ nav .logo-container h3{
 .about-me .img-container img{
     width: 70%;
     height: 100%;
+    object-fit: cover;
 }
 
 .about-me .img-container .line{
@@ -169,6 +175,7 @@ nav .logo-container h3{
 
 
 /* RESPONSIVIDADE */
+
 /* Small desktop */
 @media (max-width: 1000px){
     nav ul a{
@@ -181,6 +188,22 @@ nav .logo-container h3{
     }
     nav {
         padding: 0 30px;
+    }
+
+    .about-me{
+        flex-direction: column;
+    }
+
+    .about-me .container, .about-me .img-container{
+        width: 100%;
+    }
+
+    .about-me .container{
+        padding-right: 0;
+    }
+
+    .about-me .img-container{
+        margin: 70px 0;
     }
 
 }
@@ -219,6 +242,8 @@ nav .logo-container h3{
         padding: 0 45px;
     }
 
+ 
+
     nav{
         padding: 0 15px;
         position: fixed;
@@ -233,6 +258,11 @@ nav .logo-container h3{
     nav ul a svg{
         display: block;
         margin: 0 auto 10px;
+    }
+
+    .about-me
+    {
+        padding: 40px;
     }
 
 }
