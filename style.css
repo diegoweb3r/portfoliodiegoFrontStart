@@ -1,48 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Poppins:wght@100;400;700&display=swap');
 
-:root{
---green: #528e6b;
---mgreen: #2a3609;
---lgreen: #91b302;
---vdgreen: #0a0f0b;
---vlgreen: #EFF7D0;
---nav-height: 75px;
+:root {
+    --green: #528e6b;
+    --mgreen: #2a3609;
+    --lgreen: #91b302;
+    --vdgreen: #0a0f0b;
+    --vlgreen: #EFF7D0;
+    --nav-height: 75px;
 
 }
 
-*{
+* {
     box-sizing: border-box;
 
 }
 
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: var(--vdgreen);
 }
 
-body, button, input, select, textarea{
+body,
+button,
+input,
+select,
+textarea {
     font-family: 'Poppins', sans-serif;
-    color:var(--vlgreen);
+    color: var(--vlgreen);
 }
 
-h1{
+h1 {
     font-size: 44px;
     font-weight: 400;
 }
 
-h2{ 
+h2 {
     font-size: 24px;
     margin: 0;
     font-weight: 400;
 }
 
-p{
+p {
     color: var(--vlgreen);
     font-weight: 400;
 }
 
-button{
+button {
     background-color: var(--lgreen);
     border: 0;
     border-radius: 16px;
@@ -52,11 +57,11 @@ button{
     font-size: 18px;
 }
 
-.title-lgreen{
+.title-lgreen {
     color: var(--lgreen);
 }
 
-.title-mgreen{
+.title-mgreen {
     color: var(--mgreen);
 }
 
@@ -66,25 +71,25 @@ header {
     align-items: center;
 }
 
-header .container{
+header .container {
     width: 50%;
     padding: 0 100px;
     height: fit-content;
 }
 
-header .container p{
+header .container p {
     text-align: justify;
 }
 
-header .logo-container{
-    display: none ;
+header .logo-container {
+    display: none;
 }
 
-header .container button{
+header .container button {
     margin-top: 40px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,27 +101,27 @@ nav{
     z-index: 99;
 }
 
-nav img{
+nav img {
     height: 45px;
 }
 
-nav ul{
+nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-nav ul a{
+nav ul a {
     font-size: 24px;
     color: var(--lgreen);
     text-decoration: none;
 }
 
-nav ul a svg{
+nav ul a svg {
     display: none;
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,37 +131,37 @@ nav ul a svg{
     padding-left: 10px;
 }
 
-nav .logo-container h3{
+nav .logo-container h3 {
     margin: 0;
 }
 
-.about-me{
+.about-me {
     display: flex;
     padding: 100px;
 }
 
-.about-me .container{
+.about-me .container {
     width: 50%;
     padding-right: 50px;
 }
 
-.about-me .container p{
+.about-me .container p {
     text-align: justify;
 }
 
-.about-me .img-container{
+.about-me .img-container {
     width: 50%;
     text-align: center;
     position: relative;
 }
 
-.about-me .img-container img{
+.about-me .img-container img {
     width: 70%;
     height: 100%;
     object-fit: cover;
 }
 
-.about-me .img-container .line{
+.about-me .img-container .line {
     width: calc(70% + 50px);
     height: calc(100% + 50px);
     border: 1px solid var(--lgreen);
@@ -165,104 +170,164 @@ nav .logo-container h3{
     left: calc(50% - 70%/2 - 25px)
 }
 
-.about-me .img-container .line.mgreen{
-        transform: rotate(-3.3deg);
-        border: 1px solid var(--green);
+.about-me .img-container .line.mgreen {
+    transform: rotate(-3.3deg);
+    border: 1px solid var(--green);
 }
 
+.services {
+    text-align: center;
+    margin: 150px 0;
+    padding: 0 100px;
+}
 
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.services .services-container .card {
+    background-color: var(--mgreen);
+    border: 1px solid var(--green);
+    border-radius: 16px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    max-width: 360px;
+   
+}
+
+.services .services-container .card svg{
+    margin-bottom: 40px;
+    background-color: var(--green);
+    border-radius: 45px;
+    height: 90px;
+    width: 90px;
+}
+
+.card + .card{
+    margin-left: 10px;
+}
 
 
 
 /* RESPONSIVIDADE */
 
 /* Small desktop */
-@media (max-width: 1000px){
-    nav ul a{
+@media (max-width: 1000px) {
+    nav ul a {
         font-size: 18px;
     }
 
-    header .container{
+    header .container {
         width: 100%;
         padding: 0 100px;
     }
+
     nav {
         padding: 0 30px;
     }
 
-    .about-me{
+    .about-me {
         flex-direction: column;
     }
 
-    .about-me .container, .about-me .img-container{
+    .about-me .container,
+    .about-me .img-container {
         width: 100%;
     }
 
-    .about-me .container{
+    .about-me .container {
         padding-right: 0;
     }
 
-    .about-me .img-container{
+    .about-me .img-container {
         margin: 70px 0;
+    }
+
+    .services .services-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services{
+        padding: 0;
+    }
+    .card{
+        height: 394px;
+    }
+    
+    .card + .card{
+        margin-left: 0;
+        margin-top: 30px;
     }
 
 }
 
 /* Tablet */
-@media (max-width: 767px){
- 
-    
-    header .logo-container{
+@media (max-width: 767px) {
+
+
+    header .logo-container {
         display: flex;
         width: 100px;
         margin-bottom: 70px;
     }
 
-    header .logo-container h3{
+    header .logo-container h3 {
         margin: 0;
     }
 
-    nav  .logo-container{
+    nav .logo-container {
         display: none;
     }
 
-    nav ul{
+    nav ul {
         padding: 0;
     }
 
-    nav ul a{
+    nav ul a {
         font-size: 16px;
     }
 }
 
 /* Celular */
-@media (max-width: 480px){
+@media (max-width: 480px) {
 
-    header .container{
+    header .container {
         padding: 0 45px;
     }
 
- 
 
-    nav{
+
+    nav {
         padding: 0 15px;
         position: fixed;
         bottom: 0;
         top: unset;
         width: 100%;
     }
-    nav ul a{
+
+    nav ul a {
         font-size: 12px;
     }
 
-    nav ul a svg{
+    nav ul a svg {
         display: block;
         margin: 0 auto 10px;
     }
 
-    .about-me
-    {
+    .about-me {
         padding: 40px;
+    }
+
+    .services .services-container{
+        padding: 0 20px;
     }
 
 }
