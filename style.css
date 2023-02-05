@@ -15,6 +15,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     margin: 0;
@@ -55,6 +59,7 @@ button {
     color: var(--vlgreen);
     font-weight: bold;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .sercondary-button{
@@ -333,6 +338,37 @@ p {
     margin-bottom: 50px;
 }
 
+.contact{
+    max-width: 708px;
+    margin: 150px auto 70px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contact h1{
+    background: -webkit-linear-gradient(var(--lgreen), var(--mgreen));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    margin: 0 auto 40px;
+}
+
+.contact button{
+    margin: 40px auto;
+}
+
+.contact .social-media{
+    max-width: 360px;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer{
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 
 
